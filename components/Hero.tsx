@@ -38,9 +38,9 @@ const Hero = () => {
             Canada.
           </p>
 
-          <a href="#projects">
+          <a href="https://www.youtube.com/watch?v=5F2hnTf4n2A" target="_blank">
             <MagicButton
-              title="Show my work"
+              title="Why Me Video"
               icon={<FaLocationArrow />}
               position="right"
             />
