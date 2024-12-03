@@ -1,7 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -90,7 +89,7 @@ export const projects = [
   {
     id: 3,
     title: "ResuFy",
-    des: "Designed Resufy, an AI-driven career app in Figma, featuring AI resume enhancement, a career event portal, and job matching.",
+    des: "Designed Resufy, an AI career app with resume boosting, job matching, and event tools.",
     img: "/resufy.png",
     iconLists: ["/fi.svg"],
     link: "https://www.figma.com/proto/O2PbopjJq9q4RfkMjmJUoT/ResuFy?type=design&node-id=0-1&t=PN8Uh6eYgLpOyRaT-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=307%3A2222",
@@ -141,7 +140,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Full-Stack Developer (Co-op)",
-    desc: "Developing and maintaining a web application using TypeScript, and SCSS, enhancing functionality and user experience through robust front-end and back-end integration.",
+    desc: "Developed and maintained a web app using TypeScript and SCSS, designed relational databases in MySQL with Sequelize, and developed REST APIs for seamless front-end and back-end integration.",
     date: "May 2024 - Present",
     className: "md:col-span-2",
     thumbnail: "/kpmpower-logo.png",
@@ -149,7 +148,7 @@ export const workExperience = [
   {
     id: 2,
     title: "Web Developer",
-    desc: "Developed interactive and user-friendly websites for clients aiming to launch their side hustles, using CMS platforms such as Shopify and WordPress.",
+    desc: "Developed interactive and user-friendly websites for clients launching their side hustles, using CMS platforms such as Shopify, WordPress, and Webflow.",
     date: "Jan 2023 - Aug 2023",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/gokoo-logo.png",
