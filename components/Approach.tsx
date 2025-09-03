@@ -12,9 +12,9 @@ const Approach = () => {
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="High School"
-          icon={<AceternityIcon order="Beginnings" />}
-          description="Studied Physics and Mathematics at Sampad (NODET). Learned the foundations of Computer Science and developed a strong interest in the field."
+          title="First Code"
+          icon={<AceternityIcon order="The Discovery" />}
+          description="Specialized in Physics and Mathematics at Sampad (NODET). Started solving problems with code instead of just equations—turns out debugging is way more fun than derivatives."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -22,9 +22,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="York University"
-          icon={<AceternityIcon order="Growth" />}
-          description="Currently a third-year Computer Science student. Gaining programming skills and enhancing critical thinking abilities."
+          title="Building Skills"
+          icon={<AceternityIcon order="The Grind" />}
+          description="Fourth-year Computer Science student grinding through algorithms daily. LeetCode has become my favorite puzzle game, and I'm actively hunting for internships to put all this theory into practice."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -37,9 +37,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Career Goals"
-          icon={<AceternityIcon order="Aspirations" />}
-          description="Learning ML and AI, aspiring to be part of this revolutionary field. Passionate about leveraging these technologies to innovate in the tech industry."
+          title="Making an Impact"
+          icon={<AceternityIcon order="The Vision" />}
+          description="Passionate about building solutions that people didn't know they needed until they can't live without them. Small goal: improve daily life. Slightly larger goal: change the world."
         >
           <CanvasRevealEffect
             animationSpeed={3}
