@@ -71,6 +71,14 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "LeetCode Profile API",
+    des: "Built a Flask REST API on GCP to serve LeetCode profiles in JSON with Redis caching.",
+    img: "/leetcode-api.png",
+    iconLists: ["/py.svg", "/flask.svg", "/dock.svg", "/gcp.svg", "/redis.svg"],
+    link: "https://leetcode-api-140473619582.us-central1.run.app/",
+  },
+  {
+    id: 2,
     title: "MyEVE",
     des: "Electric vehicle marketplace built with React frontend, Node.js backend, and AWS hosting.",
     img: "/myeve.png",
@@ -87,7 +95,7 @@ export const projects = [
     link: "https://d2jb6md6y4s5zo.cloudfront.net/",
   },
   {
-    id: 2,
+    id: 3,
     title: "My Portfolio",
     des: "Developed an interactive website to professionally showcase my portfolio and projects.",
     img: "/portfolio.png",
@@ -95,7 +103,7 @@ export const projects = [
     link: "You are here!",
   },
   {
-    id: 3,
+    id: 4,
     title: "Speak2AI",
     des: "Developed a Python app for real-time vocal interactions with ChatGPT using pyaudio, websockets, and AssemblyAI.",
     img: "/speak2ai.png",
@@ -103,7 +111,7 @@ export const projects = [
     link: "https://github.com/MehrshadFb/Speak2AI",
   },
   {
-    id: 4,
+    id: 5,
     title: "ResuFy",
     des: "Designed Resufy, an AI career app with resume boosting, job matching, and event tools.",
     img: "/resufy.png",
@@ -111,7 +119,7 @@ export const projects = [
     link: "https://www.figma.com/proto/O2PbopjJq9q4RfkMjmJUoT/ResuFy?type=design&node-id=0-1&t=PN8Uh6eYgLpOyRaT-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=307%3A2222",
   },
   {
-    id: 5,
+    id: 6,
     title: "BreviMind",
     des: "Developed an AI application for article summarization using RapidAPI, enhancing user reading efficiency.",
     img: "/brevi-mind.png",
@@ -119,29 +127,13 @@ export const projects = [
     link: "https://comforting-kleicha-90f752.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Gokoo",
     des: "Developed the website using Framer, featuring an interactive and seamless design.",
     img: "/gokoo.png",
     iconLists: ["/fra.svg", "/re.svg"],
     link: "https://www.gokoo.ca/",
   },
-  // {
-  //   id: 6,
-  //   title: "Dance With Safa",
-  //   des: "Developed the website on WordPress, integrating e-commerce for course sales and event registration.",
-  //   img: "/dance-with-safa.png",
-  //   iconLists: ["/woo.svg", "/word.svg"],
-  //   link: "https://dancewithsafa.ca/",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Simplify Home",
-  //   des: "Implemented the e-commerce website on Shopify, focusing on SEO, responsiveness, and custom coding",
-  //   img: "/simplify-home.png",
-  //   iconLists: ["/sho.svg", "/html.svg", "/css.svg"],
-  //   link: "https://simplifyhome.ca/",
-  // },
 ];
 
 export const testimonials = [
