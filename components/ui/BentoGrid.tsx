@@ -7,6 +7,7 @@ import { GlobeDemo } from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { LeetCodeGrid } from "../LeetCodeGrid";
 
 export const BentoGrid = ({
   className,
@@ -165,6 +166,11 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
               />
+            </div>
+          )}
+          {id === 4 && (
+            <div className="flex flex-col items-center justify-center w-full h-full">
+              <LeetCodeGrid />
             </div>
           )}
         </div>
