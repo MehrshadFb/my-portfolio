@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import { Label, PolarRadiusAxis, RadialBar, RadialBarChart } from "recharts";
 import {
   ChartConfig,
@@ -7,10 +8,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-
-export const description = "A radial chart with stacked sections";
-
-const chartData = [{ month: "january", easy: 1260, medium: 570, hard: 300 }];
+import { LeetCodeChartData } from "../LeetCodeGrid";
 
 const chartConfig = {
   easy: {
@@ -27,18 +25,49 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-export function ChartRadialStacked() {
-  const totalVisitors =
-    chartData[0].easy + chartData[0].medium + chartData[0].hard;
+interface ChartRadialStackedProps {
+  data: LeetCodeChartData;
+  isLoading?: boolean;
+  error?: string | null;
+}
+
+export function ChartRadialStacked({
+  data,
+  isLoading = false,
+  error = null,
+}: ChartRadialStackedProps) {
+  const totalSolvedProblems = useMemo(
+    () => data.easy + data.medium + data.hard,
+    [data]
+  );
+
+  if (isLoading) {
+    return (
+      <div className="mx-auto w-full max-w-[250px] h-[125px] flex items-center justify-center">
+        <div className="text-muted-foreground">Loading...</div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="mx-auto w-full max-w-[250px] h-[125px] flex items-center justify-center">
+        <div className="text-destructive text-sm text-center">
+          <div>Failed to load data</div>
+          <div className="text-xs text-muted-foreground mt-1">{error}</div>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div className="mx-auto w-full max-w-[250px] h-[125px] ">
+    <div className="mx-auto w-full max-w-[250px] h-[125px]">
       <ChartContainer
         config={chartConfig}
         className="aspect-square w-full max-w-[250px] pb-0 mb-0"
       >
         <RadialBarChart
-          data={chartData}
+          data={[data]}
           startAngle={0}
           endAngle={180}
           innerRadius={100}
@@ -59,7 +88,7 @@ export function ChartRadialStacked() {
                         y={(viewBox.cy || 0) - 16}
                         className="fill-foreground text-2xl font-bold"
                       >
-                        {totalVisitors.toLocaleString()}
+                        {totalSolvedProblems.toLocaleString()}
                       </tspan>
                       <tspan
                         x={viewBox.cx}
