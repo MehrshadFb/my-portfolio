@@ -8,7 +8,7 @@ export const gridItems = [
   {
     id: 1,
     title:
-      "I am focused on building practical skills through hands-on projects and teamwor",
+      "I am focused on building practical skills through hands-on projects and teamwork",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -38,13 +38,13 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "I end the day by solving a LeetCode problem",
+    title: "My Coding Stats",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/grid.svg",
-    spareImg: "/b4.svg",
+    spareImg: "",
   },
   {
     id: 5,
