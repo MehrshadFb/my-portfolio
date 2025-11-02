@@ -79,6 +79,14 @@ export const projects = [
   },
   {
     id: 2,
+    title: "SplitMate",
+    des: "Developed an AI-powered receipt splitter using Gemini API. Upload receipt, split items among friends, and export a PDF.",
+    img: "/splitmate.png",
+    iconLists: ["/gemini-color.svg", "/re.svg", "/ts.svg"],
+    link: "https://split-mate-mocha.vercel.app/",
+  },
+  {
+    id: 3,
     title: "MyEVE",
     des: "Electric vehicle marketplace built with React frontend, Node.js backend, and AWS hosting.",
     img: "/myeve.png",
@@ -95,7 +103,7 @@ export const projects = [
     link: "https://d2jb6md6y4s5zo.cloudfront.net/",
   },
   {
-    id: 3,
+    id: 4,
     title: "My Portfolio",
     des: "Developed an interactive website to professionally showcase my portfolio and projects.",
     img: "/portfolio.png",
@@ -103,7 +111,7 @@ export const projects = [
     link: "You are here!",
   },
   {
-    id: 4,
+    id: 5,
     title: "Speak2AI",
     des: "Developed a Python app for real-time vocal interactions with ChatGPT using pyaudio, websockets, and AssemblyAI.",
     img: "/speak2ai.png",
@@ -111,7 +119,7 @@ export const projects = [
     link: "https://github.com/MehrshadFb/Speak2AI",
   },
   {
-    id: 5,
+    id: 6,
     title: "ResuFy",
     des: "Designed Resufy, an AI career app with resume boosting, job matching, and event tools.",
     img: "/resufy.png",
@@ -119,7 +127,7 @@ export const projects = [
     link: "https://www.figma.com/proto/O2PbopjJq9q4RfkMjmJUoT/ResuFy?type=design&node-id=0-1&t=PN8Uh6eYgLpOyRaT-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=307%3A2222",
   },
   {
-    id: 6,
+    id: 7,
     title: "BreviMind",
     des: "Developed an AI application for article summarization using RapidAPI, enhancing user reading efficiency.",
     img: "/brevi-mind.png",
@@ -127,7 +135,7 @@ export const projects = [
     link: "https://comforting-kleicha-90f752.netlify.app/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Gokoo",
     des: "Developed the website using Framer, featuring an interactive and seamless design.",
     img: "/gokoo.png",
