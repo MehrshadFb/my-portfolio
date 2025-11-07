@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Label, PolarRadiusAxis, RadialBar, RadialBarChart } from "recharts";
 import {
   ChartConfig,
@@ -36,6 +36,8 @@ export function ChartRadialStacked({
   isLoading = false,
   error = null,
 }: ChartRadialStackedProps) {
+  const [showTooltip, setShowTooltip] = useState(false);
+
   const totalSolvedProblems = useMemo(
     () => data.easy + data.medium + data.hard,
     [data]
@@ -61,7 +63,11 @@ export function ChartRadialStacked({
   }
 
   return (
-    <div className="mx-auto w-full max-w-[250px] h-[125px]">
+    <div
+      className="mx-auto w-full max-w-[250px] h-[125px] relative"
+      onMouseEnter={() => setShowTooltip(true)}
+      onMouseLeave={() => setShowTooltip(false)}
+    >
       <ChartContainer
         config={chartConfig}
         className="aspect-square w-full max-w-[250px] pb-0 mb-0"
@@ -73,10 +79,6 @@ export function ChartRadialStacked({
           innerRadius={100}
           outerRadius={110}
         >
-          <ChartTooltip
-            cursor={false}
-            content={<ChartTooltipContent hideLabel />}
-          />
           <PolarRadiusAxis tick={false} tickLine={false} axisLine={false}>
             <Label
               content={({ viewBox }) => {
@@ -126,6 +128,36 @@ export function ChartRadialStacked({
           />
         </RadialBarChart>
       </ChartContainer>
+      {showTooltip && (
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-background border border-border rounded-lg shadow-lg px-3 py-2 z-10">
+          <div className="flex flex-col gap-1 text-sm">
+            <div className="flex items-center gap-2">
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#20B2AA" }}
+              ></div>
+              <span className="text-muted-foreground">Easy:</span>
+              <span className="font-semibold">{data.easy}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#FFA500" }}
+              ></div>
+              <span className="text-muted-foreground">Medium:</span>
+              <span className="font-semibold">{data.medium}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: "#DC2626" }}
+              ></div>
+              <span className="text-muted-foreground">Hard:</span>
+              <span className="font-semibold">{data.hard}</span>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
