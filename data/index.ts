@@ -155,6 +155,14 @@ export const testimonials = [
 export const workExperience = [
   {
     id: 1,
+    title: "Software Engineering (Co-op)",
+    desc: "Not Started Yet.",
+    date: "Jan 2026 - Apr 2026",
+    className: "md:col-span-2",
+    thumbnail: "/rideargo_logo.png",
+  },
+  {
+    id: 2,
     title: "Full-Stack Developer (Co-op)",
     desc: "Developed and maintained a web app using TypeScript and SCSS, designed relational databases in MySQL with Sequelize, and developed REST APIs for seamless front-end and back-end integration.",
     date: "May 2024 - Aug 2025",
@@ -162,7 +170,7 @@ export const workExperience = [
     thumbnail: "/kpmpower-logo.png",
   },
   {
-    id: 2,
+    id: 3,
     title: "Web Developer",
     desc: "Developed interactive and user-friendly websites for clients launching their side hustles, using CMS platforms such as Shopify, WordPress, and Webflow.",
     date: "Jan 2023 - Dec 2023",
