@@ -38,9 +38,9 @@ const Hero = () => {
             Canada.
           </p>
 
-          <a href="#projects">
+          <a href="/Mehrshad-Farahbakhsh-Summer-2026.pdf" target="_blank" rel="noopener noreferrer">
             <MagicButton
-              title="Show My Work"
+              title="Download My Resume"
               icon={<FaLocationArrow />}
               position="right"
             />
