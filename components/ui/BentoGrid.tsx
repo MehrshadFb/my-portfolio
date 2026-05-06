@@ -1,7 +1,9 @@
 "use client";
 import { useState } from "react";
-import Lottie from "react-lottie";
+import dynamic from "next/dynamic";
 import { cn } from "@/utils/cn";
+
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import animationData from "@/data/confetti.json";
@@ -161,7 +163,7 @@ export const BentoGridItem = ({
                   copied ? "block" : "block"
                 }`}
               >
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <Lottie options={defaultOptions} height={200} width={400} eventListeners={[]} />
               </div>
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
