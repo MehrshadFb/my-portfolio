@@ -20,11 +20,13 @@ const RecentProjects = () => {
               <Link href={link} target="_blank">
                 <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                   <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
-                    <img src="/bg.png" alt="bg-img" />
+                    <img src="/bg.png" alt="bg-img" loading="lazy" decoding="async" />
                   </div>
                   <img
                     src={img}
                     alt={title}
+                    loading="lazy"
+                    decoding="async"
                     className="z-10 absolute bottom-0 rounded-lg" // rounded-lg
                   />
                 </div>
@@ -44,7 +46,7 @@ const RecentProjects = () => {
                           transform: `translateX(-${5 * index + 2}px)`,
                         }}
                       >
-                        <img src={icon} alt={icon} className="p-2" />
+                        <img src={icon} alt={icon} loading="lazy" decoding="async" className="p-2" />
                       </div>
                     ))}
                   </div>
