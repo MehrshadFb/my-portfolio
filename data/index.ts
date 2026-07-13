@@ -181,7 +181,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Software Engineering (Co-op)",
-    desc: "I build internal tools that help operations and engineering teams work more efficiently.",
+    desc: "Architected a Go backend orchestrating Claude Agent SDK workers for AI-powered data analysis, built its React + TypeScript chat client with real-time WebSocket updates, and shipped a Next.js + Mapbox GL trip-analytics dashboard.",
     date: "Jan 2026 - Apr 2026",
     className: "md:col-span-2",
     thumbnail: "/rideargo_logo.png",
@@ -189,7 +189,7 @@ export const workExperience = [
   {
     id: 2,
     title: "Full-Stack Developer (Co-op)",
-    desc: "Developed and maintained a web app using TypeScript and SCSS, designed relational databases in MySQL with Sequelize, and developed REST APIs for seamless front-end and back-end integration.",
+    desc: "Developed a MERN-stack platform dispatching MQTT hardware tests to battery management systems, built a Node.js data-replication service that cut feature load times by 94%, and integrated Azure Active Directory SSO with role-based access control.",
     date: "May 2024 - Aug 2025",
     className: "md:col-span-2",
     thumbnail: "/kpmpower-logo.png",
