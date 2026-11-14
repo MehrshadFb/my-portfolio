@@ -70,6 +70,14 @@ export const gridItems = [
 
 export const projects = [
   {
+    id: 11,
+    title: "Coffee Hat",
+    des: "Built an AI app that turns your LinkedIn network into coffee chats, with MCP for AI agents.",
+    img: "/coffee-hat.png",
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/postgres.svg", "/claude.svg"],
+    link: "https://coffeehat.io",
+  },
+  {
     id: 1,
     title: "XO Multiplayer Tic-Tac-Toe",
     des: "Built a real-time multiplayer Tic-Tac-Toe game with a Go gRPC backend and Next.js frontend.",
