@@ -1,4 +1,5 @@
 "use client";
+import { FaLocationArrow } from "react-icons/fa";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import { cn } from "@/utils/cn";
@@ -39,6 +40,7 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
+  link,
 }: {
   className?: string;
   id: number;
@@ -48,6 +50,8 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
+  /** When set, the title links here (opens in a new tab). */
+  link?: string;
 }) => {
   const leftLists = ["NextJS", "React", "TypeScript"];
   const rightLists = ["REST APIs", "MySQL"];
@@ -125,7 +129,19 @@ export const BentoGridItem = ({
           <div
             className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
           >
-            {title}
+            {link ? (
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-purple transition-colors duration-200"
+              >
+                {title}
+                <FaLocationArrow className="ml-3 inline align-middle text-base lg:text-xl" color="#CBACF9" />
+              </a>
+            ) : (
+              title
+            )}
           </div>
           {id === 2 && <GlobeDemo />}
           {id === 3 && (
